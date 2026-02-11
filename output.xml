@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.5 on win32)" generated="2026-02-11T11:57:15.248773" rpa="false" schemaversion="5">
+<suite id="s1" name="testRF02" source="C:\Users\USER\Desktop\robot\Software-Testing-_Quiz02\testRF02.robot">
+<test id="s1-t1" name="Open Web And Go To Login" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-11T11:57:15.432149" level="INFO">Opening browser 'chrome' to base url 'https://chiangmuan.igovapp.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-11T11:57:15.432149" elapsed="2.469457"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2026-02-11T11:57:17.904605" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=144.0.7559.133)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d426f3d5
+	0x7ff7d426f430
+	0x7ff7d40110bd
+	0x7ff7d3fe7c22
+	0x7ff7d409d2a6
+	0x7ff7d40b9652
+	0x7ff7d405cb0c
+	0x7ff7d405da53
+	0x7ff7d454b470
+	0x7ff7d454586d
+	0x7ff7d456621a
+	0x7ff7d428b235
+	0x7ff7d4293a5c
+	0x7ff7d4278844
+	0x7ff7d42789f6
+	0x7ff7d425eb87
+	0x7ffda4b1e8d7
+	0x7ffda5eec40c
+</msg>
+<msg time="2026-02-11T11:57:17.904605" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=144.0.7559.133)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d426f3d5
+	0x7ff7d426f430
+	0x7ff7d40110bd
+	0x7ff7d3fe7c22
+	0x7ff7d409d2a6
+	0x7ff7d40b9652
+	0x7ff7d405cb0c
+	0x7ff7d405da53
+	0x7ff7d454b470
+	0x7ff7d454586d
+	0x7ff7d456621a
+	0x7ff7d428b235
+	0x7ff7d4293a5c
+	0x7ff7d4278844
+	0x7ff7d42789f6
+	0x7ff7d425eb87
+	0x7ffda4b1e8d7
+	0x7ffda5eec40c
+</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="FAIL" start="2026-02-11T11:57:17.901606" elapsed="0.005201">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=144.0.7559.133)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d426f3d5
+	0x7ff7d426f430
+	0x7ff7d40110bd
+	0x7ff7d3fe7c22
+	0x7ff7d409d2a6
+	0x7ff7d40b9652
+	0x7ff7d405cb0c
+	0x7ff7d405da53
+	0x7ff7d454b470
+	0x7ff7d454586d
+	0x7ff7d456621a
+	0x7ff7d428b235
+	0x7ff7d4293a5c
+	0x7ff7d4278844
+	0x7ff7d42789f6
+	0x7ff7d425eb87
+	0x7ffda4b1e8d7
+	0x7ffda5eec40c
+</status>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>20s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="NOT RUN" start="2026-02-11T11:57:17.906807" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),"เข้าสู่ระบบ")]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-11T11:57:17.906807" elapsed="0.001005"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),"เข้าสู่ระบบ")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-11T11:57:17.907812" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>access.line.me</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-11T11:57:17.907812" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=tid</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-11T11:57:17.907812" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>name=tid</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="NOT RUN" start="2026-02-11T11:57:17.908815" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>name=tid</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-11T11:57:17.908815" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name=tid</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-11T11:57:17.908815" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=tpasswd</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-11T11:57:17.908815" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>name=tpasswd</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="NOT RUN" start="2026-02-11T11:57:17.908815" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>name=tpasswd</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-11T11:57:17.908815" elapsed="0.000998"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>name=tpasswd</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-11T11:57:17.909813" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[type="submit"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-02-11T11:57:17.909813" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>css:button[type="submit"]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="NOT RUN" start="2026-02-11T11:57:17.909813" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:button[type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-11T11:57:17.909813" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-11T11:57:17.909813" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-02-11T11:57:17.909813" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-02-11T11:57:15.431179" elapsed="2.478634">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=144.0.7559.133)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d426f3d5
+	0x7ff7d426f430
+	0x7ff7d40110bd
+	0x7ff7d3fe7c22
+	0x7ff7d409d2a6
+	0x7ff7d40b9652
+	0x7ff7d405cb0c
+	0x7ff7d405da53
+	0x7ff7d454b470
+	0x7ff7d454586d
+	0x7ff7d456621a
+	0x7ff7d428b235
+	0x7ff7d4293a5c
+	0x7ff7d4278844
+	0x7ff7d42789f6
+	0x7ff7d425eb87
+	0x7ffda4b1e8d7
+	0x7ffda5eec40c
+</status>
+</test>
+<status status="FAIL" start="2026-02-11T11:57:15.249772" elapsed="2.661337"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="testRF02" id="s1" pass="0" fail="1" skip="0">testRF02</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-11T11:57:17.904605" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=144.0.7559.133)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7d426f3d5
+	0x7ff7d426f430
+	0x7ff7d40110bd
+	0x7ff7d3fe7c22
+	0x7ff7d409d2a6
+	0x7ff7d40b9652
+	0x7ff7d405cb0c
+	0x7ff7d405da53
+	0x7ff7d454b470
+	0x7ff7d454586d
+	0x7ff7d456621a
+	0x7ff7d428b235
+	0x7ff7d4293a5c
+	0x7ff7d4278844
+	0x7ff7d42789f6
+	0x7ff7d425eb87
+	0x7ffda4b1e8d7
+	0x7ffda5eec40c
+</msg>
+</errors>
+</robot>
